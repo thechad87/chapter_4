@@ -4,10 +4,10 @@ import com.example.demo.DemoApplicationTests;
 import com.example.demo.NameWrapper;
 import org.junit.Test;
 
-public class AlternativeInheritanceTests extends DemoApplicationTests {
+public class CompositionTests extends DemoApplicationTests {
 
     @Test
-    public void testAlternativeInheritance() {
+    public void testComposition() {
         NameWrapper nameWrapper = new NameWrapper("susan", "somesurname");
 
         assert nameWrapper.getName().equals("susan");
