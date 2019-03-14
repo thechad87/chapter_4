@@ -10,14 +10,15 @@ public class PolymorphismTests extends DemoApplicationTests {
     @Test
     public void testPolymorphism() {
         Name name = new Name();
-        name.setEnforceUppercase(true);
         name.setValue("susan");
 
         Surname surname = new Surname();
-        surname.setEnforceUppercase(true);
         surname.setValue("somesurname");
 
         assert name.getType().equals("NAME");
         assert surname.getType().equals("SURNAME");
+
+        Name poly = surname;
+        assert poly.getType().equals("SURNAME");
     }
 }
