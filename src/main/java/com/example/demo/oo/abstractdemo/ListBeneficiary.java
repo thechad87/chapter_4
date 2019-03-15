@@ -1,7 +1,5 @@
 package com.example.demo.oo.abstractdemo;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 public class ListBeneficiary extends AbstractRequest {
 
     public ListBeneficiary(String sessionId) {
@@ -9,7 +7,7 @@ public class ListBeneficiary extends AbstractRequest {
     }
 
     @Override
-    protected void validate() throws InvalidArgumentException {
+    protected void validate() throws IllegalArgumentException {
         // nothing to do here.
     }
 }

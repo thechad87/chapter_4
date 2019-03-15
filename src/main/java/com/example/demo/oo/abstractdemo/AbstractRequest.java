@@ -1,7 +1,5 @@
 package com.example.demo.oo.abstractdemo;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 

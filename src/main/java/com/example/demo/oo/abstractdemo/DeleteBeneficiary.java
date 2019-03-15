@@ -1,7 +1,5 @@
 package com.example.demo.oo.abstractdemo;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 /**
  *  1. implementing class can derive only from one abstract class
  *      (a class can inherit more than one interface)
@@ -22,7 +20,7 @@ public class DeleteBeneficiary extends AbstractRequest {
     }
 
     @Override
-    protected void validate() throws InvalidArgumentException {
+    protected void validate() throws IllegalArgumentException {
         if (benefiaryNo == null || benefiaryNo.intValue() == 0) {
             throw new IllegalArgumentException("benefiaryNo is invalid");
         }

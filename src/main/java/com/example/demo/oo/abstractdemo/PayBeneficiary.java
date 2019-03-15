@@ -1,7 +1,5 @@
 package com.example.demo.oo.abstractdemo;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 import java.math.BigDecimal;
 
 public class PayBeneficiary extends AbstractRequest {
@@ -17,7 +15,7 @@ public class PayBeneficiary extends AbstractRequest {
     }
 
     @Override
-    protected void validate() throws InvalidArgumentException {
+    protected void validate() throws IllegalArgumentException {
         if (benficiaryNo == null || benficiaryNo.intValue() == 0) {
             throw new IllegalArgumentException("benefiaryNo is invalid");
         }
