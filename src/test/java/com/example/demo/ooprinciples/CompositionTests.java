@@ -1,7 +1,7 @@
 package com.example.demo.ooprinciples;
 
 import com.example.demo.DemoApplicationTests;
-import com.example.demo.NameWrapper;
+import com.example.demo.oo.principles.NameWrapper;
 import org.junit.Test;
 
 public class CompositionTests extends DemoApplicationTests {

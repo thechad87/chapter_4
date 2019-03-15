@@ -1,8 +1,8 @@
 package com.example.demo.ooprinciples;
 
 import com.example.demo.DemoApplicationTests;
-import com.example.demo.Name;
-import com.example.demo.Surname;
+import com.example.demo.oo.principles.Name;
+import com.example.demo.oo.principles.Surname;
 import org.junit.Test;
 
 public class PolymorphismTests extends DemoApplicationTests {

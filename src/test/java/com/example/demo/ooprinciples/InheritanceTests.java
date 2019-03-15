@@ -1,7 +1,7 @@
 package com.example.demo.ooprinciples;
 
 import com.example.demo.DemoApplicationTests;
-import com.example.demo.Surname;
+import com.example.demo.oo.principles.Surname;
 import org.junit.Test;
 
 public class InheritanceTests extends DemoApplicationTests {

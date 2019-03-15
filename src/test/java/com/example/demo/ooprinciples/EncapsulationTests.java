@@ -1,7 +1,7 @@
 package com.example.demo.ooprinciples;
 
 import com.example.demo.DemoApplicationTests;
-import com.example.demo.Name;
+import com.example.demo.oo.principles.Name;
 import org.junit.Test;
 
 public class EncapsulationTests extends DemoApplicationTests {
