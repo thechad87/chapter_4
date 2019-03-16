@@ -1,11 +1,11 @@
 package com.example.demo.oo.principles;
 
-public class NameWrapper {
+public class NamePackage {
 
     private Name name;
     private Surname surname;
 
-    public NameWrapper(String name, String surname) {
+    public NamePackage(String name, String surname) {
         this.name = new Name();
         this.name.setValue(name);
 

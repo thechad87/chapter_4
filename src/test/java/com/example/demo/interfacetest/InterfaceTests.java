@@ -1,23 +1,23 @@
-package com.example.demo.interfacedemo;
+package com.example.demo.interfacetest;
 
-import com.example.demo.oo.interfacedemo.AuditService;
-import com.example.demo.oo.interfacedemo.Request;
-import com.example.demo.oo.interfacedemo.Transaction;
-import com.example.demo.oo.interfacedemo.TransportService;
+import com.example.demo.oo.interfaces.QueryServ;
+import com.example.demo.oo.interfaces.Request;
+import com.example.demo.oo.interfaces.Transaction;
+import com.example.demo.oo.interfaces.TransportServ;
 import org.junit.Test;
 
 public class InterfaceTests {
 
     @Test(expected = IllegalArgumentException.class)
     public void testImplementationOfInterfaceThatShouldFail() {
-        AuditService qaAuditService = new AuditService() {
+        QueryServ qaQueryServ = new QueryServ() {
             @Override
             public void audit(Request request) {
                 System.out.println("This is QA");
             }
         };
 
-        TransportService qaTransportService = new TransportService() {
+        TransportServ qaTransportServ = new TransportServ() {
             @Override
             public void transportRequest(Request request) {
                 System.out.println("Send this of to the QA system");
@@ -36,20 +36,20 @@ public class InterfaceTests {
             }
         };
 
-        Transaction qaTransaction = new Transaction(qaAuditService, qaTransportService);
+        Transaction qaTransaction = new Transaction(qaQueryServ, qaTransportServ);
         qaTransaction.transportRequest(someRequestThatWillFailValidation);
     }
 
     @Test
     public void testImplementationOfInterfaceThatWillPass() {
-        AuditService qaAuditService = new AuditService() {
+        QueryServ qaQueryServ = new QueryServ() {
             @Override
             public void audit(Request request) {
                 System.out.println("This is QA");
             }
         };
 
-        TransportService qaTransportService = new TransportService() {
+        TransportServ qaTransportServ = new TransportServ() {
             @Override
             public void transportRequest(Request request) {
                 System.out.println("Send this of to the QA system");
@@ -68,7 +68,7 @@ public class InterfaceTests {
             }
         };
 
-        Transaction qaTransaction = new Transaction(qaAuditService, qaTransportService);
+        Transaction qaTransaction = new Transaction(qaQueryServ, qaTransportServ);
         qaTransaction.transportRequest(someRequestThatWillFailValidation);
 
         assert true;

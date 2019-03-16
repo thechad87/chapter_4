@@ -1,4 +1,4 @@
-package com.example.demo.oo.abstractdemo;
+package com.example.demo.oo.abstraction;
 
 /**
  *  1. implementing class can derive only from one abstract class
@@ -9,11 +9,11 @@ package com.example.demo.oo.abstractdemo;
  */
 
 //1
-public class DeleteBeneficiary extends AbstractRequest {
+public class RemoveDependents extends AbstractRequest {
 
     private Integer benefiaryNo;
 
-    public DeleteBeneficiary(String sessionId, Integer benefiaryNo) {
+    public RemoveDependents(String sessionId, Integer benefiaryNo) {
         super(sessionId);       //2
 
         this.benefiaryNo = benefiaryNo;

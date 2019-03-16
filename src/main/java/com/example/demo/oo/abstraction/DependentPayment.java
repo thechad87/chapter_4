@@ -1,13 +1,13 @@
-package com.example.demo.oo.abstractdemo;
+package com.example.demo.oo.abstraction;
 
 import java.math.BigDecimal;
 
-public class PayBeneficiary extends AbstractRequest {
+public class DependentPayment extends AbstractRequest {
 
     private Integer benficiaryNo;
     private BigDecimal amount;
 
-    public PayBeneficiary(String sessionId, Integer benficiaryNo, BigDecimal amount) {
+    public DependentPayment(String sessionId, Integer benficiaryNo, BigDecimal amount) {
         super(sessionId);
 
         this.benficiaryNo = benficiaryNo;

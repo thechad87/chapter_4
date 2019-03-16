@@ -1,4 +1,4 @@
-package com.example.demo.ooprinciples;
+package com.example.demo.principlesofoop;
 
 import com.example.demo.DemoApplicationTests;
 import com.example.demo.oo.principles.Surname;

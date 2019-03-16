@@ -1,8 +1,8 @@
-package com.example.demo.oo.abstractdemo;
+package com.example.demo.oo.abstraction;
 
-public class ListBeneficiary extends AbstractRequest {
+public class Dependents extends AbstractRequest {
 
-    public ListBeneficiary(String sessionId) {
+    public Dependents(String sessionId) {
         super(sessionId);
     }
 

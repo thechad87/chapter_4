@@ -1,4 +1,4 @@
-package com.example.demo.oo.interfacedemo;
+package com.example.demo.oo.interfaces;
 
 /**
  * 1. There is VERY little difference between an abstract METHOD and an interface METHOD. What can be said
